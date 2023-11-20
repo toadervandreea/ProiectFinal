@@ -2,6 +2,9 @@
 {
   "compileOnSave": false,
   "compilerOptions": {
+    
+    "ignoreDeprecations": "5.0",  // specifying which version of TY and settings you want to ignore 
+    "suppressImplicitAnyIndexErrors":true,
     "baseUrl": "./",
     "outDir": "./dist/out-tsc",
     "forceConsistentCasingInFileNames": true,

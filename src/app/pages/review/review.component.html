@@ -1,0 +1,9 @@
+<div class="review-container">
+    <textarea [(ngModel)]="reviewMessage" placeholder="Adaugă un review"></textarea>
+    <button (click)="submitReview()">Trimite Review</button>
+    <div *ngFor="let review of reviews " class="review-item">
+        {{ review.message }}
+        <button (click)="updateReview(review.id)">Editează</button>
+        <button (click)="deleteReview(review.id)">Șterge</button> 
+    </div>
+</div>

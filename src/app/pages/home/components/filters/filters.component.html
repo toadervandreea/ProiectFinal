@@ -1,0 +1,17 @@
+
+  <mat-expansion-panel *ngIf="categories && categories.length">
+    <mat-expansion-panel-header>
+      <mat-panel-title>
+        Filtrează după categorie
+      </mat-panel-title>
+    </mat-expansion-panel-header>
+    <div>
+      <label for="categoryFilter">Filtrează după categorie:</label>
+      <select id="categoryFilter" (change)="onShowCategory()" [(ngModel)]="selectedCategory">
+        <option value="">Toate categoriile</option>
+        <option *ngFor="let category of categories" [value]="category">{{ category }}</option>
+      </select>
+    </div>
+  </mat-expansion-panel>
+  
+  
